@@ -1,0 +1,46 @@
+.container {
+  background: white;
+  width: 80%;
+}
+
+.innerContainer {
+  display: flex;
+}
+
+/* .imageContainer {
+
+} */
+
+.infoContainer {
+  padding: 20px;
+}
+
+.hotelName, .overview {
+  color: #17317f;
+}
+
+.location {
+  color: #8f8f8f;
+}
+
+.button {
+  background-color: #fedc07;
+  color: #17317f;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 110px;
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 1.5rem;
+}
+
+.overviewContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}

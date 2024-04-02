@@ -1,12 +1,12 @@
 import React from 'react'
-import './App.css'
+import styles from './App.module.css'
 import { hotels } from './assets/hotels'
 import Hotel from './components/Hotel/Hotel'
 
 const App = () => {
   return (
-    <section className='hotels-section'>
-        <div className='container'>
+    <section className={styles.hotelsSection}>
+        <div className={styles.container}>
             <Hotel hotels={hotels}/>
         </div>
     </section>
