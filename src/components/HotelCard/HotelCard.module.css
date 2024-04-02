@@ -6,15 +6,15 @@
   display: flex;
 }
 
-/* .imageContainer {
-
-} */
+.imageContainer {
+  position: relative;
+}
 
 .infoContainer {
   padding: 20px;
 }
 
-.hotelName, .overview {
+.hotelName, .overview, .toggle {
   color: #17317f;
 }
 
@@ -50,4 +50,16 @@
   gap: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.toggleContainer {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.toggleInnerContainer {
+  display: flex;
+  padding: 5px 10px;
 }
