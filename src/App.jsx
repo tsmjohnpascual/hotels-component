@@ -1,11 +1,13 @@
 import React from 'react'
 import './App.css'
+import { hotels } from './assets/hotels'
+import Hotel from './components/Hotel/Hotel'
 
 const App = () => {
   return (
     <section className='hotels-section'>
         <div className='container'>
-            App
+            <Hotel hotels={hotels}/>
         </div>
     </section>
   )
