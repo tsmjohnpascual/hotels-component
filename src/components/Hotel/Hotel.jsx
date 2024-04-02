@@ -6,7 +6,11 @@ const Hotels = ({ hotels }) => {
   return (
     <>
       <Sort/>
-      <HotelCard/>
+      <div className='hotel-cards-container'>
+        {hotels.map((hotel) => {
+          return <HotelCard hotel={hotel}/>
+        })}
+      </div>
     </>
   )
 }
