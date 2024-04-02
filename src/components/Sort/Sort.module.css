@@ -19,3 +19,8 @@ button {
   color: #17317f;
   width: 200px;
 }
+
+.selected {
+  background-color: #17317f;
+  color: white;
+}

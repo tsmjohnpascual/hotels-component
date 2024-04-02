@@ -6,12 +6,12 @@ import HotelCard from '../HotelCard/HotelCard'
 import { sortAlphabetically, sortByPrice, sortByRating } from '../../utils/sort'
 
 const Hotels = ({ hotels }) => {
-  const defaultSort = sortByPrice(hotels)
-  const [hotelSortOrder, setHotelSortOrder] = useState(defaultSort)
+  const [hotelSortOrder, setHotelSortOrder] = useState(hotels)
+  const [activeSort, setActiveSort] = useState('price')
   
   return (
     <>
-      <Sort/>
+      <Sort hotelSortOrder={hotelSortOrder} setHotelSortOrder={setHotelSortOrder} activeSort={activeSort} setActiveSort={setActiveSort}/>
       <div className={styles.container}>
         {hotelSortOrder.map((hotel) => {
           return <HotelCard hotel={hotel} key={hotel.id}/>
