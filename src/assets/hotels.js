@@ -10,7 +10,7 @@ export const hotels = [
             'infants': 1
         },
         'date': {
-            'date': '',
+            'date': '3rd July 2019',
             'duration': 7
         },
         'departure': 'East Midlands',
@@ -34,7 +34,7 @@ export const hotels = [
             'children': 1
         },
         'date': {
-            'date': '',
+            'date': '27th May 2019',
             'duration': 7
         },
         'departure': 'Liverpool',
@@ -58,7 +58,7 @@ export const hotels = [
             'children': 2
         },
         'date': {
-            'date': '',
+            'date': '3rd July 2019',
             'duration': 7
         },
         'departure': 'Manchester',
