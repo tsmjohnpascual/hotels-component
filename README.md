@@ -22,10 +22,6 @@ npm install
 npm run dev
 ```
 
-### Link
-
-- https://tsmjohnpascual.github.io/hotels-component/
-
 ### Screenshots
 
 <img width="567" alt="asdasd" src="https://github.com/tsmjohnpascual/advice-app/assets/36450257/cc0a699a-ea09-4edf-8a4c-ccf17b24a5e7">
