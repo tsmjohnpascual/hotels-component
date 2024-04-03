@@ -41,7 +41,15 @@ const HotelCard = ({ hotel }) => {
             <Star key={index} />
           ))}
           </div>
-          <p><strong>{guests.adults}</strong> Adults, <strong>{guests.children}</strong> children & <strong>{guests.infants}</strong> infant</p>
+          <p>
+            <strong>{guests.adults}</strong>
+            {guests.adults > 1 ? ' Adults' : ' Adult'}
+            {guests.children ? <strong>, {guests.children}</strong> : null}
+            {guests.children ? guests.children === 1 ? ' child' : ' children' : null}
+            {guests.infants ? ' & ' : null}
+            {guests.infants ? <strong>{guests.infants}</strong> : null}
+            {guests.infants ? guests.infants === 1 ? ' infant' : ' infants' : null}
+          </p>
           <p><strong>{date.date}</strong> for <strong>{date.duration} days</strong></p>
           <p>departing from <strong>{departure}</strong></p>
           <button className={styles.button}>
