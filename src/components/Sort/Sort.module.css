@@ -24,3 +24,26 @@ button {
   background-color: #17317f;
   color: white;
 }
+
+@media (max-width: 1250px) {
+  button {
+    width: 180px;
+    font-size: 0.8rem;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  button {
+    width: 130px;
+    font-size: 0.6rem;
+  }
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+}

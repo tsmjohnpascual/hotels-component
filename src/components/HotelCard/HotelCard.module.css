@@ -1,5 +1,6 @@
 .container {
   background: white;
+  width: 850px;
 }
 
 .innerContainer {
@@ -23,11 +24,14 @@
 }
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fedc07;
   color: #17317f;
   border: none;
   cursor: pointer;
-  width: 330px;
+  width: 320px;
   border-radius: 5px;
   padding: 10px 110px;
   margin-top: 10px;
@@ -42,14 +46,13 @@
   flex-direction: column;
   gap: 10px;
   padding: 20px;
-  width: 860px;
 }
 
 .starContainer {
   display: flex;
   gap: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .toggleContainer {
@@ -62,4 +65,65 @@
 .toggleInnerContainer {
   display: flex;
   padding: 5px 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1250px) {
+  .container {
+    width: 750px;
+  }
+
+  .button {
+    width: 250px;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 500px;
+  }
+
+  .innerContainer {
+    display: block;
+  }
+
+  .infoContainer {
+    text-align: center;
+  }
+
+  .starContainer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    width: 100px;
+    margin: 10px auto auto auto;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    width: 300px;
+  }
 }
